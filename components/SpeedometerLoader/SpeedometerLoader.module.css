@@ -56,7 +56,7 @@
   border: 1px transparent solid;
   border-radius: 50%;
   position: absolute;
-  border-right-color: #e81512;
+  border-right-color: #f58420;
   animation: spin 5s linear infinite;
 }
 
@@ -102,7 +102,7 @@
   transform: rotate(45deg);
   right: 33px;
   bottom: 33px;
-  background: #e81512;
+  background: #f58420;
 }
 
 .subline {
@@ -140,7 +140,7 @@
   transform: rotate(22.5deg);
   right: 20px;
   bottom: 49px;
-  background: #e81512;
+  background: #f58420;
 }
 
 .needle {
@@ -162,7 +162,7 @@
   height: 0;
   border-style: solid;
   border-width: 3.5px 50px 3.5px 0;
-  border-color: transparent #e81512 transparent transparent;
+  border-color: transparent #f58420 transparent transparent;
   position: absolute;
   right: 50%;
   top: 50%;
