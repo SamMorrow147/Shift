@@ -1345,7 +1345,7 @@ button:focus {
 ====================================================*/
 
 .hero-style-1{
-  height: 100vh;
+  height: 65vh;
   min-height: 850px;
   position: relative;
 }
@@ -1360,7 +1360,7 @@ button:focus {
 }
 
 .hero-style-1 .slide {
-  height:100vh;
+  height: 65vh;
   min-height: 850px;
 }
 
@@ -3243,7 +3243,7 @@ display: none;
 
 @media(max-width:991px){
   .navbar-brand img{
-    max-width: 35px!important;
+    max-width: 125px!important;
     margin-top: 10px;
     margin-bottom: 0;
   }
