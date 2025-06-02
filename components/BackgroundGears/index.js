@@ -7,7 +7,7 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
   const gearsRef = useRef([]);
 
   useEffect(() => {
-    console.log('BackgroundGears component mounted, opacity:', opacity);
+    console.log('BackgroundGears component mounted');
     const canvas = canvasRef.current;
     if (!canvas) {
       console.log('Canvas ref not found');
@@ -29,14 +29,14 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
       const numGears = Math.min(5, Math.floor((canvas.width * canvas.height) / 120000));
       console.log('Creating', numGears, 'gears');
       
-      // Define light gray colors that are lighter than the background
+      // Define varied gray colors with better contrast
       const gearColors = [
-        '#E8E8E8',  // Very light gray
-        '#F0F0F0',  // Almost white gray
-        '#ECECEC',  // Light gray
-        '#F4F4F4',  // Pale gray
-        '#E5E5E5',  // Soft gray
-        '#EEEEEE',  // Light neutral gray
+        '#808080',  // Medium gray
+        '#909090',  // Lighter gray
+        '#707070',  // Darker gray
+        '#888888',  // Light gray variation
+        '#787878',  // Dark gray variation
+        '#848484',  // Medium-light gray
       ];
       
       for (let i = 0; i < numGears; i++) {
@@ -61,7 +61,7 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
             y,
             radius,
             teeth,
-            rotationSpeed: (0.003 + Math.random() * 0.007) * (Math.random() > 0.5 ? 1 : -1),
+            rotationSpeed: (0.025 + Math.random() * 0.065) * (Math.random() > 0.5 ? 1 : -1),
             rotation: Math.random() * Math.PI * 2,
             color: gearColors[i % gearColors.length]
           });
@@ -80,11 +80,11 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
       ctx.translate(x, y);
       ctx.rotate(rotation);
       
-      // Create subtle gray gradient
+      // Create enhanced gradient with better contrast
       const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, radius);
-      gradient.addColorStop(0, '#FFFFFF'); // White center
+      gradient.addColorStop(0, '#A0A0A0'); // Lighter center
       gradient.addColorStop(0.7, color);
-      gradient.addColorStop(1, '#D0D0D0'); // Slightly darker edge
+      gradient.addColorStop(1, '#606060'); // Darker edge
       
       // Draw the complete gear shape including teeth
       const toothAngle = (Math.PI * 2) / teeth;
@@ -132,16 +132,16 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
       ctx.fill();
       
       // Add subtle outline
-      ctx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+      ctx.strokeStyle = 'rgba(0, 0, 0, 0.3)';
       ctx.lineWidth = 1;
       ctx.stroke();
       
-      // Draw center hub
+      // Draw center hub with enhanced gradient
       const hubRadius = radius * 0.25;
       const hubGradient = ctx.createRadialGradient(0, 0, 0, 0, 0, hubRadius);
-      hubGradient.addColorStop(0, '#FFFFFF');
+      hubGradient.addColorStop(0, '#B0B0B0');
       hubGradient.addColorStop(0.5, color);
-      hubGradient.addColorStop(1, '#CCCCCC');
+      hubGradient.addColorStop(1, '#505050');
       
       ctx.fillStyle = hubGradient;
       ctx.beginPath();
@@ -154,7 +154,7 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
         const boltDistance = radius * 0.5;
         const numBolts = 6;
         
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
         for (let i = 0; i < numBolts; i++) {
           const angle = (i / numBolts) * Math.PI * 2;
           const boltX = Math.cos(angle) * boltDistance;
@@ -167,7 +167,7 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
       }
       
       // Center highlight
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+      ctx.fillStyle = 'rgba(192, 192, 192, 0.6)';
       ctx.beginPath();
       ctx.arc(-hubRadius * 0.2, -hubRadius * 0.2, hubRadius * 0.3, 0, Math.PI * 2);
       ctx.fill();
@@ -179,14 +179,22 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
       // Clear canvas
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       
-      // Set opacity for background effect
-      ctx.globalAlpha = opacity;
+      // Set background color
+      ctx.fillStyle = '#191919';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // Remove opacity/transparency - gears are now solid
+      ctx.globalAlpha = 1.0;
       
       // Draw all gears
       gearsRef.current.forEach(gear => {
         gear.rotation += gear.rotationSpeed;
         drawGear(gear);
       });
+      
+      // Apply transparent black overlay directly to canvas
+      ctx.fillStyle = 'rgba(25, 25, 25, 0.90)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
       
       animationFrameRef.current = requestAnimationFrame(animate);
     };
@@ -204,13 +212,12 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
         cancelAnimationFrame(animationFrameRef.current);
       }
     };
-  }, [opacity]);
+  }, []);
 
   return (
     <canvas
       ref={canvasRef}
       className={styles.backgroundGears}
-      style={{ opacity }}
     />
   );
 };

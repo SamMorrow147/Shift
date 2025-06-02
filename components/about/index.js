@@ -17,9 +17,10 @@ const About = (props) => {
                         <div className="tp-about-text">
                             <div className="tp-about-icon-content">
                                 <h2>Who We Are</h2>
-                                <p>The freedom we felt riding the Black Hills my first Sturgis rally was the moment this agency was born. And as I shifted into sixth gear I knew I had the name. The hand-picked talent on this team are the most gifted (and fun) people that I've worked with during my career. They too are 'lifers' in this business. Passionate about web development, organic and paid social media campaigns, design and photo + video.</p>
-                                <p>We work with brands that you see everyday at the store, as well as national organizations & local businesses of all shapes and sizes. The goal with Shift is not to be the biggest marketing agency with the most clients, but to simply be an awesome marketing agency with the most trust. A marketing partner that wants to 'win' just as much as you do. We deliver great (sometimes crazy) ideas, high-end creative, custom campaigns with ROI, all on time and within budget.</p>
-                                <p>Nothing more, nothing less.</p>
+                                <p>The moment Shift was born? Somewhere deep in the Black Hills, first Sturgis rally, sixth gear wide open. That ride sparked more than adrenaline. It lit the idea for a different kind of agency. One built on freedom, momentum, and instinct.</p>
+                                <p>Shift Creative is powered by a hand-picked crew of lifers in this business. People I trust, admire, and genuinely have a blast working with. Experts in web, design, social (both paid and organic), photo, and video. This team doesn't just deliver, they give a damn.</p>
+                                <p>We partner with national names you pass on the shelves and local legends carving their own lane. The goal isn't to be the biggest agency. It's to be the most trusted. The one you call when you're ready to win. We bring bold ideas, sharp creative, and real results. On time. On budget. No ego. No fluff.</p>
+                                <p>Just the good stuff. Every time.</p>
                                 <DefaultModal buttonClass={'template-btn'}/>
                             </div>
                         </div>

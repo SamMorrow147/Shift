@@ -11,7 +11,7 @@ const Service = () => {
             Simg1:'images/service-single/web-design/img-1.jpg',
             Simg2:'images/service-single/web-design/img-2.jpg',
             Simg3:'images/service-single/web-design/img-3.jpg',
-            des:'We build the cool and creative. From simple to sophisticated.'
+            des:'Built to outrun boring. From sleek one-pagers to SEO-tuned machines, we build digital experiences that grip the road and leave the competition in the dust.'
         },
         {
             Id:"2",
@@ -20,7 +20,7 @@ const Service = () => {
             Simg1:'images/service-single/development/img-1.jpg',
             Simg2:'images/service-single/development/img-2.jpg',
             Simg3:'images/service-single/development/img-3.jpg',
-            des:'From the boardroom to a bar napkin, our strategy is your success.'
+            des:'Brains behind the burnouts. Whether it\'s sketched on a napkin or mapped like a pit crew plan, our strategy fuels your brand with horsepower and direction.'
         },
         {
             Id:"3",
@@ -29,7 +29,7 @@ const Service = () => {
             Simg1:'images/service-single/creative/img-1.jpg',
             Simg2:'images/service-single/creative/img-2.jpg',
             Simg3:'images/service-single/creative/img-3.jpg',
-            des:'Now more than ever, a picture is worth a thousand words.'
+            des:'Visuals with velocity. We don\'t just shoot content — we capture momentum. Every frame tells your story with power and precision.'
         },
         {
             Id:"4",
@@ -38,7 +38,7 @@ const Service = () => {
             Simg1:'images/service-single/responsive/img-1.jpg',
             Simg2:'images/service-single/responsive/img-2.jpg',
             Simg3:'images/service-single/responsive/img-3.jpg',
-            des:'Creative & credible content + paid campaigns with ROI.'
+            des:'Content that cuts through the noise. We craft scroll-stopping stories and throttle-paid campaigns with results that actually move the needle.'
         },
         {
             Id:"5",
@@ -47,13 +47,13 @@ const Service = () => {
             Simg1:'images/service-single/branding/img-1.jpg',
             Simg2:'images/service-single/branding/img-2.jpg',
             Simg3:'images/service-single/branding/img-3.jpg',
-            des:'We love logos. If you can dream it, we can design it.'
+            des:'Design that hits redline. From logos to full-blown identities, our work turns heads, sparks movement, and fuels brand obsession.'
         }
     ]
 
     return (
         <div id="service" className="service-area section-padding">
-            <BackgroundGears opacity={0.08} />
+            <BackgroundGears opacity={0.15} />
             <div className="borderd"></div>
             <div className="container">
                 <div className="col-l2">
