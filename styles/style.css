@@ -1008,7 +1008,7 @@ button:focus {
 
 @media (max-width: 991px) {
   .header-style-1 .navbar-header button {
-    top: 25px;
+    top: 13px;
   }
 }
 
