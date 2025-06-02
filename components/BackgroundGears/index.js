@@ -61,7 +61,7 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
             y,
             radius,
             teeth,
-            rotationSpeed: (0.025 + Math.random() * 0.065) * (Math.random() > 0.5 ? 1 : -1),
+            rotationSpeed: (0.015 + Math.random() * 0.045) * (Math.random() > 0.5 ? 1 : -1),
             rotation: Math.random() * Math.PI * 2,
             color: gearColors[i % gearColors.length]
           });
@@ -88,7 +88,7 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
       
       // Draw the complete gear shape including teeth
       const toothAngle = (Math.PI * 2) / teeth;
-      const innerRadius = radius * 0.75; // Increased from 0.7 to make teeth shorter
+      const innerRadius = radius * 0.85; // Increased from 0.75 to make teeth shorter
       const outerRadius = radius;
       const toothHeight = radius * 0.2;
       
@@ -193,7 +193,7 @@ const BackgroundGears = ({ opacity = 0.15 }) => {
       });
       
       // Apply transparent black overlay directly to canvas
-      ctx.fillStyle = 'rgba(25, 25, 25, 0.90)';
+      ctx.fillStyle = 'rgba(25, 25, 25, 0.88)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       
       animationFrameRef.current = requestAnimationFrame(animate);
