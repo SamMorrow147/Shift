@@ -8,6 +8,7 @@ import Testimonial from '../components/Testimonials/index';
 import Portfolio from '../components/portfolio/index';
 import Scrollbar from '../components/Scroolbar/index'
 import Navbar from '../components/Navbar/index';
+import BackgroundGears from '../components/BackgroundGears/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Element} from 'react-scroll'
 
@@ -16,6 +17,7 @@ const HomePage =() => {
     return(
         <Fragment>
             <div className="br-app">
+                <BackgroundGears opacity={0.15} />
                 <Navbar />
                 <Element name='home'>
                     <Hero/>

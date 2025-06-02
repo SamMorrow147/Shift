@@ -3091,7 +3091,7 @@ display: none;
     margin-bottom: 20px;
 }
 .footer-image img {
-    max-width: 60px;
+    max-width: 250px;
 }
 .footer-menu ul li:hover a{
   color:#fff;
@@ -4493,4 +4493,23 @@ padding-bottom: 30px;
     padding: 0 !important;
     position: static !important;
   }
+}
+
+/* ===========================
+   CUSTOM ICON BOLDNESS ADJUSTMENT
+   =========================== */
+
+/* Make pin and mail icons appear bolder to match phone icon */
+.flaticon-pin:before,
+.flaticon-mail:before {
+    font-weight: 600 !important;
+    text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor, 0 0.5px 0 currentColor, 0 -0.5px 0 currentColor;
+}
+
+/* Ensure consistent appearance across all contact icons */
+.office-info-icon .flaticon-pin:before,
+.office-info-icon .flaticon-mail:before,
+.office-info-icon .flaticon-phone-call:before {
+    font-weight: 600 !important;
+    text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor, 0 0.5px 0 currentColor, 0 -0.5px 0 currentColor;
 }

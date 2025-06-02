@@ -1,4 +1,5 @@
 import React from 'react';
+import RotatingGear from '../RotatingGear';
 
 const ContactSection = () => {
     return(
@@ -11,9 +12,11 @@ const ContactSection = () => {
                                 <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
                                     <div className="office-info-item">
                                         <div className="office-info-icon">
-                                            <div className="info-icon">
-                                                <i className="fi flaticon-pin"></i>
-                                            </div>
+                                            <RotatingGear size={85} speed={10} color="#F0F0F0" teeth={12}>
+                                                <div className="info-icon">
+                                                    <i className="fi flaticon-pin"></i>
+                                                </div>
+                                            </RotatingGear>
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Address</h2>
@@ -24,9 +27,11 @@ const ContactSection = () => {
                                 <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
                                     <div className="office-info-item">
                                         <div className="office-info-icon">
-                                            <div className="info-icon">
-                                                <i className="fi flaticon-mail"></i>
-                                            </div>
+                                            <RotatingGear size={85} speed={10} color="#F0F0F0" teeth={12}>
+                                                <div className="info-icon">
+                                                    <i className="fi flaticon-mail"></i>
+                                                </div>
+                                            </RotatingGear>
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Email Us</h2>
@@ -37,9 +42,11 @@ const ContactSection = () => {
                                 <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
                                     <div className="office-info-item">
                                         <div className="office-info-icon">
-                                            <div className="info-icon">
-                                                 <i className="fi flaticon-phone-call"></i>
-                                            </div>
+                                            <RotatingGear size={85} speed={10} color="#F0F0F0" teeth={12}>
+                                                <div className="info-icon">
+                                                     <i className="fi flaticon-phone-call"></i>
+                                                </div>
+                                            </RotatingGear>
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Call Now</h2>

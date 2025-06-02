@@ -1,0 +1,69 @@
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gear {
+  position: relative;
+  background: transparent;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.gear .center {
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: counterSpin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 17px;
+}
+
+.tooth {
+  position: absolute;
+  z-index: 1;
+  border-radius: 0;
+}
+
+@keyframes spin {
+  from { 
+    transform: rotate(0deg); 
+  }
+  to { 
+    transform: rotate(360deg); 
+  }
+}
+
+@keyframes counterSpin {
+  from { 
+    transform: rotate(0deg); 
+  }
+  to { 
+    transform: rotate(-360deg); 
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .gear {
+    animation: none;
+  }
+  .gear .center {
+    animation: none;
+  }
+} 
