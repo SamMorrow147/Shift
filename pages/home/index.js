@@ -2,7 +2,6 @@ import React, {Fragment} from 'react';
 import Hero from '../../components/Hero/index';
 import About from '../../components/about/index';
 import Service from '../../components/Service/index';
-import PricingPlan from '../../components/Pricing/index';
 import BlogSection from '../../components/BlogSection/index';
 import ContactSection from '../../components/ContactSection/index';
 import Footer from '../../components/Footer/index';
@@ -32,7 +31,6 @@ const HomePage =() => {
                     <Portfolio/>
                 </Element>
                 <Testimonial/>
-                <PricingPlan/>
                 <Element name="blog">
                     <BlogSection/>
                 </Element>
