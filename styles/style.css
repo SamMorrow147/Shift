@@ -4350,7 +4350,7 @@ padding-bottom: 30px;
 /* Mobile-specific hero adjustments */
 @media screen and (max-width: 768px) {
   .hero.hero-style-1.hero-slider-wrapper {
-    min-height: 100vh !important;
+    min-height: 70vh !important;
     display: -webkit-flex !important;
     display: flex !important;
     -webkit-flex-direction: column !important;
