@@ -4348,28 +4348,33 @@ padding-bottom: 30px;
    =========================== */
 
 /* Mobile-specific hero adjustments */
-@media (max-width: 768px) {
-  .hero.hero-style-1 {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+  .hero.hero-style-1.hero-slider-wrapper {
+    min-height: 100vh !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
   }
   
-  .mobile-video-slide {
-    position: relative;
+  .hero-slider .slide.mobile-video-slide {
+    position: relative !important;
     height: 60vh !important;
-    min-height: 300px;
-    flex: 1;
+    min-height: 300px !important;
+    -webkit-flex: 1 !important;
+    flex: 1 !important;
   }
   
-  .mobile-full-video {
+  .background-video.mobile-full-video {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
     object-position: center center !important;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
   }
   
-  .mobile-content-container {
+  .container.mobile-content-container {
     position: absolute !important;
     bottom: 0 !important;
     left: 0 !important;
@@ -4377,34 +4382,37 @@ padding-bottom: 30px;
     top: auto !important;
     z-index: 10 !important;
     padding: 20px !important;
+    background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.7)) !important;
     background: linear-gradient(transparent, rgba(0,0,0,0.7)) !important;
   }
   
-  .mobile-slide-caption {
+  .slide-caption.mobile-slide-caption {
     padding: 20px 0 40px 0 !important;
     text-align: center !important;
   }
   
-  .mobile-subtitle h4 {
+  .slide-subtitle.mobile-subtitle h4 {
     font-size: 1.2rem !important;
     margin-bottom: 10px !important;
     color: #fff !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+    -webkit-font-smoothing: antialiased !important;
   }
   
-  .mobile-title h2 {
+  .slide-title.mobile-title h2 {
     font-size: 2.5rem !important;
     margin-bottom: 20px !important;
     color: #fff !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
     font-weight: bold !important;
+    -webkit-font-smoothing: antialiased !important;
   }
   
-  .mobile-social {
+  .social-links.mobile-social {
     display: none !important;
   }
   
-  .mobile-svg {
+  .white_svg.mobile-svg {
     position: absolute !important;
     bottom: -1px !important;
     left: 0 !important;
@@ -4414,56 +4422,75 @@ padding-bottom: 30px;
 }
 
 /* Tablet adjustments */
-@media (max-width: 1024px) and (min-width: 769px) {
-  .mobile-video-slide {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .hero-slider .slide.mobile-video-slide {
     height: 70vh !important;
   }
   
-  .mobile-content-container {
+  .container.mobile-content-container {
     position: absolute !important;
     bottom: 10% !important;
     z-index: 10 !important;
   }
   
-  .mobile-slide-caption {
+  .slide-caption.mobile-slide-caption {
     padding: 30px 0 !important;
     text-align: center !important;
   }
   
-  .mobile-subtitle h4 {
+  .slide-subtitle.mobile-subtitle h4 {
     font-size: 1.4rem !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
   }
   
-  .mobile-title h2 {
+  .slide-title.mobile-title h2 {
     font-size: 3rem !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
   }
 }
 
 /* Large mobile devices */
-@media (max-width: 480px) {
-  .mobile-video-slide {
+@media screen and (max-width: 480px) {
+  .hero-slider .slide.mobile-video-slide {
     height: 50vh !important;
     min-height: 280px !important;
   }
   
-  .mobile-content-container {
+  .container.mobile-content-container {
     padding: 15px !important;
   }
   
-  .mobile-slide-caption {
+  .slide-caption.mobile-slide-caption {
     padding: 15px 0 30px 0 !important;
   }
   
-  .mobile-subtitle h4 {
+  .slide-subtitle.mobile-subtitle h4 {
     font-size: 1rem !important;
     margin-bottom: 8px !important;
   }
   
-  .mobile-title h2 {
+  .slide-title.mobile-title h2 {
     font-size: 2rem !important;
     margin-bottom: 15px !important;
     line-height: 1.2 !important;
+  }
+}
+
+/* Additional Chrome-specific fixes */
+@media screen and (max-width: 768px) {
+  .hero.hero-style-1 .slide {
+    height: auto !important;
+    min-height: 60vh !important;
+  }
+  
+  .hero.hero-style-1 .slide .background-video {
+    -webkit-transform: translate3d(0,0,0) !important;
+    transform: translate3d(0,0,0) !important;
+  }
+  
+  /* Force Chrome to recognize the mobile layout */
+  .hero.hero-style-1 .slide-caption {
+    padding: 0 !important;
+    position: static !important;
   }
 }
