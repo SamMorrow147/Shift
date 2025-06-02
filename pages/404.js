@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import erimg from '/public/Images/error-404.png'
 import Image from 'next/image'
 
 
@@ -16,7 +15,7 @@ const Error = (props) => {
                     <div className="col col-xs-12">
                         <div className="content clearfix">
                             <div className="error">
-                                <Image src={erimg} alt=""/>
+                                <Image src="/Images/error-404.png" alt="404 Error" width={500} height={300} />
                             </div>
                             <div className="error-message">
                                 <h3>Oops! Page Not Found!</h3>
