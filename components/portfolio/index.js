@@ -62,50 +62,7 @@ const Portfolio = () => {
         pImg3:'/Images/protfolio/3d/img-3.jpg',
         vedio:"",
         des:'3D Project, Landing Page Design, App development, Mobile an Website Design an expert web designer and developer. Contrary to popular belief Lorem Ipsum is not simply random text. It has Design,'
-    },
-      {
-        Id:"4",
-        heading:"Modern BG",
-        subHeading:"Illustration . Art Direction",
-        authorName:'Lily Aney',
-        value:'$800',
-        date:'09 Jan 2021',
-        videosId:'r_hYR53r61M',
-        pImg1:'/Images/protfolio/modern/img-1.jpg',
-        pImg2:'/Images/protfolio/modern/img-2.jpg',
-        pImg3:'/Images/protfolio/modern/img-3.jpg',
-        vedio:"",
-        des:'Modern BG, Landing Page Design, App development, Mobile an Website Design an expert web designer and developer. Contrary to popular belief Lorem Ipsum is not simply random text. It has Design,'
-    },
-      {
-        Id:"5",
-        heading:"Visual Design",
-        subHeading:"Illustration . Art Direction",
-        authorName:'Aliza mart',
-        value:'$1000',
-        date:'06 Jan 2021',
-        videosId:'LUSa3yRTB9A',
-        pImg1:'/Images/protfolio/visual/img-1.jpg',
-        pImg2:'/Images/protfolio/visual/img-2.jpg',
-        pImg3:'/Images/protfolio/visual/img-3.jpg',
-        vedio:"",
-        des:'Visual Design, Landing Page Design, App development, Mobile an Website Design an expert web designer and developer. Contrary to popular belief Lorem Ipsum is not simply random text. It has Design,'
-    },
-      {
-        Id:"6",
-        heading:"Product Design",
-        subHeading:"Illustration . Art Direction",
-        authorName:'Martin Gaptil',
-        value:'$1200',
-        date:'03 Jan 2021',
-        videosId:'r_hYR53r61M',
-        pImg1:'/Images/protfolio/pdesign/img-1.jpg',
-        pImg2:'/Images/protfolio/pdesign/img-2.jpg',
-        pImg3:'/Images/protfolio/pdesign/img-3.jpg',
-        vedio:"",
-        des:'Product Design, Landing Page Design, App development, Mobile an Website Design an expert web designer and developer. Contrary to popular belief Lorem Ipsum is not simply random text. It has Design,'
-    },
- 
+    }
   ]
 
   return (
@@ -114,7 +71,7 @@ const Portfolio = () => {
                 <div className="col-12">
                     <div className="section-title text-center">
                         <span>Portfolio</span>
-                        <h2>Latest Project</h2>
+                        <h2>Latest Projects</h2>
                     </div>
                 </div>
                 <div className="row">
