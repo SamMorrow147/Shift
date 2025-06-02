@@ -1,5 +1,6 @@
 import React from 'react';
 import ServiceSingle from '../ServiceSingle'
+import BackgroundGears from '../BackgroundGears';
 
 const Service = () => {
     const service = [
@@ -52,6 +53,7 @@ const Service = () => {
 
     return (
         <div id="service" className="service-area section-padding">
+            <BackgroundGears opacity={0.08} />
             <div className="borderd"></div>
             <div className="container">
                 <div className="col-l2">

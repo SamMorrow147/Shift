@@ -32,9 +32,6 @@ class Hero extends Component {
                                     <div className="slide-subtitle mobile-subtitle">
                                         <h4>Creative Design Agency</h4>
                                     </div>
-                                    <div className="slide-title mobile-title">
-                                        <h2>Shift Creative</h2>
-                                    </div>
                                 </div>
                             </div>
                         </div>

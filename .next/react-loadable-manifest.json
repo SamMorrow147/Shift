@@ -1,9 +1,8 @@
 {
   "pages/_app.js -> ../components/SpeedometerLoader/SpeedometerLoader": {
-    "id": 4388,
+    "id": "pages/_app.js -> ../components/SpeedometerLoader/SpeedometerLoader",
     "files": [
-      "static/css/5437bcdcb71010b3.css",
-      "static/chunks/388.525b5193a9dfb0b0.js"
+      "static/chunks/_pages-dir-browser_components_SpeedometerLoader_SpeedometerLoader_js.js"
     ]
   }
 }

@@ -129,7 +129,7 @@ button:focus {
   top: 0;
   width: 1px;
   height: 100%;
-  background: rgba(102,102,102,.3)!important;
+  background: transparent!important;
   z-index: -1;
 }
 .hero-slider-wrapper{
@@ -688,7 +688,7 @@ button:focus {
 }
 
 .header-style-1 #navbar > ul li a.active {
-  color: #FFA500 !important;
+  color: #f58420 !important;
 }
 
 .header-style-1 #navbar > ul li a:before{
@@ -707,7 +707,7 @@ button:focus {
   right: -30px;
   opacity: 1; 
   visibility: visible;
-  background: #FFA500;
+  background: #f58420;
 }
 
 @media screen and (min-width: 1200px) {
@@ -785,7 +785,7 @@ button:focus {
     right: -30px;
     opacity: 1; 
     visibility: visible;
-    background: #FFA500;
+    background: #f58420;
   }
   .header-style-1 #navbar > ul li a,
   .header-style-1 #navbar > ul > li .sub-menu a {
@@ -1125,7 +1125,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   z-index: 0;
 }
 
@@ -1865,7 +1865,7 @@ button:focus {
 /*0.6 service-area start*/
 
 .service-area {
-  background: #202020;
+  background: rgba(0, 0, 0, 0.125);
   padding-bottom: 160px;
   position: relative;
 }
@@ -1890,7 +1890,7 @@ button:focus {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  color: #FFA500; /* Changed to orange */
+  color: #f58420; /* Changed to specific orange */
 }
 
 .service-section .services-icon-wrapper .service-dot {
@@ -3001,7 +3001,7 @@ display: none;
 
 .tp-contact-pg-section .office-info .office-info-item .office-info-icon .fi:before{
   font-size: 40px;
-  color: #FFA500;
+  color: #f58420;
 }
 
 .tp-contact-pg-section .office-info .office-info-item .office-info-text h2 {
@@ -4320,7 +4320,7 @@ padding-bottom: 30px;
 }
 
 .hero .slide-caption .contact-info a:hover {
-    color: #FFA500;
+    color: #f58420;
 }
 
 @media (max-width: 767px) {
@@ -4389,6 +4389,14 @@ padding-bottom: 30px;
   .slide-caption.mobile-slide-caption {
     padding: 20px 0 40px 0 !important;
     text-align: center !important;
+    /* Safari-specific fixes */
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
   
   .slide-subtitle.mobile-subtitle h4 {
@@ -4397,6 +4405,10 @@ padding-bottom: 30px;
     color: #fff !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
     -webkit-font-smoothing: antialiased !important;
+    /* Safari-specific padding */
+    padding: 0 15px !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
   }
   
   .slide-title.mobile-title h2 {
@@ -4406,6 +4418,10 @@ padding-bottom: 30px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
     font-weight: bold !important;
     -webkit-font-smoothing: antialiased !important;
+    /* Safari-specific padding */
+    padding: 0 15px !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
   }
   
   .social-links.mobile-social {
@@ -4512,4 +4528,190 @@ padding-bottom: 30px;
 .office-info-icon .flaticon-phone-call:before {
     font-weight: 600 !important;
     text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor, 0 0.5px 0 currentColor, 0 -0.5px 0 currentColor;
+}
+
+/* ===========================
+   SAFARI DESKTOP COMPATIBILITY FIXES
+   =========================== */
+
+/* Safari-specific fixes for all screen sizes */
+@supports (-webkit-appearance: none) {
+  .slide-caption {
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  .slide-caption .slide-subtitle h4,
+  .slide-caption .slide-title h2 {
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* WebKit-specific selector for Safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .slide-caption {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+  }
+  
+  .slide-subtitle h4,
+  .slide-title h2 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* ===========================
+   MOBILE RESPONSIVE VIDEO HERO
+   =========================== */
+
+/* ===========================
+   UNIVERSAL SLIDE CAPTION PADDING - ALL SCREEN SIZES
+   =========================== */
+
+/* Ensure padding is always present regardless of screen width */
+.slide-caption,
+.slide-caption.mobile-slide-caption {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  box-sizing: border-box !important;
+}
+
+/* Apply padding to subtitle and title at all screen sizes */
+.slide-subtitle h4,
+.slide-title h2,
+.slide-subtitle.mobile-subtitle h4,
+.slide-title.mobile-title h2 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box !important;
+}
+
+/* Override any existing media queries that might remove padding */
+@media (min-width: 769px) {
+  .slide-caption {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  .slide-subtitle h4,
+  .slide-title h2 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slide-caption {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  .slide-subtitle h4,
+  .slide-title h2 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .slide-caption {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  .slide-subtitle h4,
+  .slide-title h2 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* ===========================
+   UNIVERSAL SLIDE CAPTION POSITIONING - ALL SCREEN SIZES
+   =========================== */
+
+/* Ensure consistent bottom positioning regardless of screen width */
+.slide-caption,
+.slide-caption.mobile-slide-caption {
+  padding-top: 480px !important;
+  padding-bottom: 50px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  box-sizing: border-box !important;
+}
+
+/* Apply padding to subtitle and title at all screen sizes */
+.slide-subtitle h4,
+.slide-title h2,
+.slide-subtitle.mobile-subtitle h4,
+.slide-title.mobile-title h2 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  box-sizing: border-box !important;
+}
+
+/* Override the large screen default that centers the text */
+@media (min-width: 1501px) {
+  .slide-caption {
+    padding-top: 480px !important;
+    padding-bottom: 50px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+/* Maintain consistent positioning across all other screen sizes */
+@media (min-width: 769px) {
+  .slide-caption {
+    padding-top: 480px !important;
+    padding-bottom: 50px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  .slide-subtitle h4,
+  .slide-title h2 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slide-caption {
+    padding-top: 480px !important;
+    padding-bottom: 50px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  .slide-subtitle h4,
+  .slide-title h2 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .slide-caption {
+    padding-top: 480px !important;
+    padding-bottom: 50px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  .slide-subtitle h4,
+  .slide-title h2 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 }

@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST='{"pages/_app.js -> ../components/SpeedometerLoader/SpeedometerLoader":{"id":4388,"files":["static/css/5437bcdcb71010b3.css","static/chunks/388.525b5193a9dfb0b0.js"]}}';
+self.__REACT_LOADABLE_MANIFEST="{\"pages/_app.js -> ../components/SpeedometerLoader/SpeedometerLoader\":{\"id\":\"pages/_app.js -> ../components/SpeedometerLoader/SpeedometerLoader\",\"files\":[\"static/chunks/_pages-dir-browser_components_SpeedometerLoader_SpeedometerLoader_js.js\"]}}"
