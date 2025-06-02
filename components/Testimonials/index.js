@@ -51,7 +51,7 @@ class Testimonial extends Component {
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
                                         <div className="testimonial-img">
-                                            <img src='images/testimonial/1.jpg' alt="" />
+                                            <img src='/Images/testimonial/1.jpg' alt="" />
                                         </div>
                                         <div className="testimonial-content">
                                             <h4>David Warner</h4>
@@ -66,7 +66,7 @@ class Testimonial extends Component {
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
                                         <div className="testimonial-img">
-                                            <img src='images/testimonial/2.jpg' alt="" />
+                                            <img src='/Images/testimonial/2.jpg' alt="" />
                                         </div>
                                         <div className="testimonial-content">
                                             <h4>Lily Watson</h4>
@@ -81,7 +81,7 @@ class Testimonial extends Component {
                                 <div className="testimonial-item">
                                     <div className="testimonial-content">
                                         <div className="testimonial-img">
-                                            <img src="images/testimonial/3.jpg" alt="" />
+                                            <img src="/Images/testimonial/3.jpg" alt="" />
                                         </div>
                                         <div className="testimonial-content">
                                             <h4>Martin Gaptil</h4>

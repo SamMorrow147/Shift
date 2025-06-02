@@ -9,7 +9,7 @@ const About = (props) => {
                     <div className="col-lg-5 col-md-12 col-12">
                         <div className="tp-about-wrap">
                             <div className="tp-about-img">
-                                <img src="images/about.jpg" alt=""/>
+                                <img src="/Images/about.jpg" alt=""/>
                             </div>
                         </div>
                     </div>
