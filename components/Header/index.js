@@ -46,10 +46,10 @@ class Header extends Component {
                                     <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} onClick={this.toggleMenu}>Home</Link>
                                 </li>
                                 <li className="about">
-                                    <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} onClick={this.toggleMenu}>About Me</Link>
+                                    <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} onClick={this.toggleMenu}>About</Link>
                                 </li>
                                 <li className="service">
-                                    <Link activeClass="active" to="service" spy={true} smooth={true} duration={500} onClick={this.toggleMenu}>Service</Link>
+                                    <Link activeClass="active" to="service" spy={true} smooth={true} duration={500} onClick={this.toggleMenu}>Services</Link>
                                 </li>
                                 <li className="protfolio">
                                     <Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={500} onClick={this.toggleMenu}>Portfolio</Link>

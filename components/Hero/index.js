@@ -37,15 +37,6 @@ class Hero extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="social-links mobile-social">
-                    <div className="overlay"></div>
-                    <ul>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/"><i className="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/"><i className="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/"><i className="fa fa-linkedin"></i></a></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.pinterest.com/"><i className="fa fa-pinterest"></i></a></li>
-                    </ul>
-                </div>
                 <div className="white_svg mobile-svg">
                     <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
                         <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 "></polygon>

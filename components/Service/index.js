@@ -59,7 +59,7 @@ const Service = () => {
                 <div className="col-l2">
                     <div className="section-title section-title2 text-center">
                         <span>What We Do</span>
-                        <h2>We make the juice worth the squeeze.</h2>
+                        <h2>We Fuel the Journey to your Destination</h2>
                     </div>
                 </div>
                 <div className="row">
