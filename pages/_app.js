@@ -6,6 +6,7 @@ import '../styles/style.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Head from 'next/head';
+import Script from 'next/script';
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 
@@ -39,6 +40,19 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Shift Creative Design</title>
       </Head>
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-505CLEN8T6"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-505CLEN8T6');
+        `}
+      </Script>
       {loading ? <SpeedometerLoader /> : <Component {...pageProps} />}
     </div>
   )
